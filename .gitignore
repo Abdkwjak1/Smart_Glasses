@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.vscode/
+tempCodeRunnerFile.py
+
+# runtime state: people registry, face samples, trained face model, generated names
+data/
+dataset/
+
+# large model files (fetch with `python scripts/download_models.py`)
+model_data/
