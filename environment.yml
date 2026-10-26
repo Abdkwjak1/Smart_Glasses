@@ -1,0 +1,21 @@
+name: smart-glasses
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - portaudio        # microphone access for SpeechRecognition
+  - pip:
+      # core
+      - numpy>=1.24,<2
+      - opencv-contrib-python>=4.8,<4.11   # contrib is required for cv2.face (LBPH)
+      - Pillow>=10
+      - gTTS>=2.5
+      - SpeechRecognition>=3.10
+      - PyAudio>=0.2.14
+      - playsound==1.2.2
+      # dev / quality
+      - pytest>=8
+      - pytest-cov>=5
+      - ruff>=0.5
+      - -e .
